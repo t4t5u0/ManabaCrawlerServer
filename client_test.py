@@ -1,5 +1,11 @@
 import requests
-import pprint
-user = {'userid': '', 'password': ''}  # plz type ur id&pass
-r = requests.post("http://localhost:5000", data=user) #POST user data
-pprint.pprint(r.json())
+from pprint import pprint
+
+import json
+
+# input your information
+user = {'userid': '', 'password': ''}
+r = requests.post("http://127.0.0.1:8000/post/get_tasks",
+                  params=user)  # POST user data
+
+print(json.dumps(r.json(), ensure_ascii=False))
