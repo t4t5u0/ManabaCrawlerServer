@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 from fastapi import FastAPI
 
@@ -19,6 +20,7 @@ def post_get_tasks(
 ) -> manaba.Tasks:
 
     # {"userid": userid, "password": password}
+    time.sleep(0.5)
     return manaba.get_tasks(userid, password)
 
 
