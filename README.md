@@ -12,13 +12,19 @@ or
 ```bash
 git clone https://github.com/t4t5u0/ManabaCrawlerServer.git
 cd ManabaCrawlerServer
-pip install -r requirements.txt
-./start.sh
+pip install -r ./config/requirements.txt
+./script/start.sh
 ```
 
 ## 停止時
+```
+docker-compose down
+```
+
+or
+
 ```bash
-./stop.sh
+./script/stop.sh
 ```
 
 ## データ取得
