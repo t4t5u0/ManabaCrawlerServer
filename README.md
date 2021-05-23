@@ -2,6 +2,13 @@
 manaba を crawl する APIサーバ
 
 ## 起動手順
+
+```bash
+docker-compose up -d
+```
+
+or
+
 ```bash
 git clone https://github.com/t4t5u0/ManabaCrawlerServer.git
 cd ManabaCrawlerServer
