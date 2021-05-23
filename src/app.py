@@ -4,11 +4,11 @@ import time
 
 from fastapi import FastAPI
 
-import manaba
 
 PATH = os.path.abspath('')
 sys.path.append(PATH)
 
+from src.manaba import manaba
 
 app = FastAPI()
 
