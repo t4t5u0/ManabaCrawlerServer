@@ -30,7 +30,7 @@ or
 ## データ取得
 ```bash
 curl -X 'POST' \
-  'http://127.0.0.1:8000/post/get_tasks?userid=b1019206&password=bmnSrha7' \
+  'http://127.0.0.1:8000/post/get_tasks?userid=学籍番号&password=パスワード' \
   -H 'accept: application/json' \
   -d ''
 ```
